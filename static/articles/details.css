@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Judson:700|Poppins:400');
+*{
+     color: white;
+     font-family: 'Poppins';
+  font-weight: 400;
+}
+body{
+   background: #0D1520;
+   height: 150vh;
+   overflow-x: hidden;
+}
+a{
+    padding: 10px;
+    position: relative;
+    top: 3%;
+    margin-left: 5%;
+    background:#111927;
+    border-radius: 50%;
+    font-size: 30px;
+}
+a i.bx{
+    color:#70B8FF;
+}
+.content {
+   position: relative;
+   left:30%;
+
+}
+.comment {
+  position: relative;
+  left: 30%;
+  margin-top: 100px;
+}
+form {
+  position: relative;
+  top: 20%;
+  left:30%;
+  width: 30%;
+
+}
+.form {
+   width: 100%;
+   background: #111927;
+}
+.form-area{
+   width: 100%;
+   margin-top: 5%;
+   background:#111927;
+
+}
+.comment-details{
+  background: white;
+
+}

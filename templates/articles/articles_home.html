@@ -1,0 +1,43 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'articles/home.css' %}">
+    <title>Document</title>
+</head>
+<body>
+   <nav>
+       <div class="logo">
+           <img src="{% get_media_prefix %}logo/django-logo.jpeg" alt="" srcset="">
+       </div>
+       <div class="authentification">
+           {% if user.is_authenticated %}
+           <a href= '#' class="compte">Mon compte:{{user.username}}</a>
+           <a href="{% url 'logout_user'%}" >Deconnexion</a>
+           {% else %}
+             <a href="{% url 'signup' %}" class = 'signup'>S'inscrire</a>
+             <a href="{% url 'login_user' %}">se connecter</a>
+           {%endif%}
+       </div>
+
+   </nav>
+   <section class="articles">
+       {% for post in posts %}
+          <div class="article">
+              <div class="img">
+                  <img src="{{ post.thumbnail.url }}" alt="image">
+              </div>
+              <div class="text">
+                  <h3>{{post.title}}</h3>
+                  <p>{{post.content}}</p>
+                  <a href="{% url  'details' post.slug %}">Voir plus</a>
+              </div>
+          </div>
+       {%endfor%}
+   </section>
+</body>
+</html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Judson:700|Poppins:400');
+
+body {
+  font-family: 'Poppins';
+  font-weight: 400;
+   background: #0D1520;
+   height: 150vh;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Judson';
+  font-weight: 700;
+}
+
+nav .authentification .compte{
+   border-right: 2px solid grey;
+   padding: 5px;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+*{
+   padding: 0;
+   margin:0;
+   text-decoration: none;
+   color: #70B8FF;
+}
+
+nav{
+   display: flex;
+   justify-content:space-between;
+   margin:35px;
+}
+nav div h3{
+   color:#70B8FF;
+   }
+nav div a{
+   color:#70B8FF;
+   font-size : 18px;
+   margin:O 10px;
+}
+nav div a.signup{
+   background:#0D2847;
+   padding:15px;
+   border-radius : 5px;
+}
+section .article{
+   background:#111927;
+   margin: 30px;
+   width:700px;
+   height: 300px;
+   display:flex;
+   position:relative;
+   left: 20%;
+   top: 100px;
+   border-radius:5px;
+
+}
+section  .img img{
+   height: 250px;
+   position: relative;
+   left: 10%;
+   top: 20px;
+   width: 200px;
+
+}
+section .article .text{
+   position: relative;
+    top: 15%;
+    left:7%;
+   background: transparent;
+   height: 200px;
+   width:60%;
+}
+nav .logo{
+    background: transparent;
+    position: relative;
+    bottom: 20px;
+
+}
+nav .logo img{
+    height: 100px;
+    width: 60px;
+    border-radius: 50%;
+}
+section .article .text p{
+     margin-bottom:10%;
+     margin-top: 10px;
+
+}
+section .article .text a{
+    padding:15px;
+    background:#0D2847;
+    border-radius:5px;
+    margin-left:5%;
+
+}
+nav .logo{
+    background:red transparent;
+     position:relative;
+     bottom:20px;
+}
+nav .logo img{
+    heigth: 50%;
+    width: 85%;
+    border-radius:15%;
+}

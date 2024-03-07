@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form method="post">
+    {%csrf_token%}
+    <!--
+    <input type="text" name="username" id="Username" placeholder="entrez votre nom d'utilisateur">
+    <input type="text" name="firstname" id="Firstname" placeholder="entrez votre prénom">
+    <input type="text" name="email" id="Email" placeholder="entrez votre e-mail">
+    <input type="text" name="password" id="Password" placeholder="entrez votre mot de passe">
+    <input type="submit" value="envoyer">
+    -->
+    {{form}}
+    <input type="submit" value="envoyer">
+
+</form>
+</body>
+</html>
