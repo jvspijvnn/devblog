@@ -6,14 +6,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static 'articles/home.css' %}">
-
+    <link rel="stylesheet" href="{% static 'articles/articles_home.css' %}">
     <title>Document</title>
 </head>
 <body>
    <nav>
        <div class="logo">
-           <img src="{% get_media_prefix %}logo/django-logo.jpeg" alt="" srcset="">
+           <img src="{% get_media_prefix %}logo/django-logo.jpeg" alt=" logo">
        </div>
        <div class="authentification">
            {% if user.is_authenticated %}

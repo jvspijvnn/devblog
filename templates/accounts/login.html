@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,15 +6,44 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{% static 'accounts/signup.css' %}">
+
     <title>Document</title>
 </head>
 <body>
-<form action="" method="post">
-    {%csrf_token%}
-    <input type="text" name="username" id="Username" placeholder="entrez votre nom d'utilisateur">
-    <input type="text" name="password" id="Password" placeholder="entrez votre mot de passe">
-    <input type="submit" value="envoyer">
-</form>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+    </head>
+    <body>
+
+      <form  method="post">
+          {% csrf_token %}
+
+            <h1>Connexion</h1>
+
+            <fieldset>
+
+              <legend>
+                  <span class="number">1</span></legend>
+
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="username">
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password">
+
+            </fieldset>
+
+
+            <button type="submit">Sign Up</button>
+
+      </form>
+
+    </body>
+</html>
 
 </body>
 </html>

@@ -7,5 +7,6 @@ urlpatterns = [
                   path('', views.articles_home, name='home'),
                   path('compte/', include('accounts.urls')),
                   path('details/ <str:slug>', views.details, name='details'),
+                  path('about/', views.about, name = 'about'),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
