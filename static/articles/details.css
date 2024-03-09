@@ -45,10 +45,13 @@ form {
 .form-area{
    width: 100%;
    margin-top: 5%;
-   background:#111927;
+       background:#111927;
 
 }
-.comment-details{
-  background: white;
+div .commentdetails{
+    background:#111927;
+}
+div .commentdetails .commentaire{
+      background:#0D2847;
 
 }

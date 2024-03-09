@@ -20,10 +20,13 @@
 
      <div class="comment">
          <h2>Commentaires ...</h2>
-         <div class="comment-details">
+         <div class="commentdetails">
              {% for y in x.comments.all %}
-                <h6>{{y.objet}}</h6>
-                <p>{{y.content}}</p>
+                 <div class="commentaire">
+                     <p>{{user.username}}</p>
+                    <h6>{{y.objet}}</h6>
+                    <p>{{y.content}}</p>
+                 </div>
              {% endfor %}
 
          </div>
