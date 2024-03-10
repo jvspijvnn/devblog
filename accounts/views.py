@@ -1,14 +1,15 @@
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
-from .forms import signupForm
 
 
 # Create your views here.
 def signup(request):
-    form = signupForm()
+    form = UserCreationForm()
     if request.method == 'POST':
-        form = signupForm(request.POST)
+        form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
             redirect('login_user')
